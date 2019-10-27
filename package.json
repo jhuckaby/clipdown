@@ -1,0 +1,27 @@
+{
+	"name": "clipdown",
+	"version": "1.0.0",
+	"description": "Convert rich HTML to Markdown in your clipboard (macOS only).",
+	"main": "index.js",
+	"bin": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jhuckaby/clipdown.git"
+	},
+	"keywords": [
+		"markdown",
+		"clipboard",
+		"macos"
+	],
+	"author": "Joseph Huckaby",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jhuckaby/clipdown/issues"
+	},
+	"homepage": "https://github.com/jhuckaby/clipdown#readme",
+	"dependencies": {
+		"breakdance": "^3.0.1",
+		"pixl-args": "^1.0.0",
+		"sanitize-html": "^1.20.1"
+	}
+}
