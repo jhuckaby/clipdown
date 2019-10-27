@@ -2,7 +2,7 @@
 
 This module will convert rich HTML on your clipboard to Markdown source code, and place that back onto your clipboard.  This can be useful for bloggers who write articles using Markdown, because they can copy a chunk of HTML from anywhere on the web, activate `clipdown` (possibly via a [global keyboard shortcut](#global-keyboard-shortcut)), and then paste Markdown source into their article.
 
-Special thanks to the [breakdown](https://github.com/breakdance/breakdance) module, which does all the conversion magic behind the scenes.
+Special thanks to the [breakdance](https://github.com/breakdance/breakdance) module, which does all the conversion magic behind the scenes.
 
 Note that this module currently only works on macOS.
 
@@ -26,7 +26,7 @@ That's it!  Now try pasting into your Markdown text editor, and you will see nic
 
 ## Command-Line Options
 
-Any command-line options specified in `--key value` format are passed directly to [breakdown](https://github.com/breakdance/breakdance).  Please see [their docs](https://breakdance.github.io/breakdance/docs.html#options) for details on which options you can pass here.  Example:
+Any command-line options specified in `--key value` format are passed directly to [breakdance](https://github.com/breakdance/breakdance).  Please see [their docs](https://breakdance.github.io/breakdance/docs.html#options) for details on which options you can pass here.  Example:
 
 ```
 clipdown --comments --one
