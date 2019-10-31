@@ -34,7 +34,10 @@ cp.exec( OSASCRIPT_BIN + ` -e 'the clipboard as "HTML"'`, function(err, stdout, 
 	
 	var hex = RegExp.$1;
 	var html = Buffer.from(hex, 'hex').toString();
-	var shtml = sanitizeHTML(html, {});
+	var shtml = sanitizeHTML(html, {
+		// sanitize-html doesn't allow h1 or h2 by default (facepalm) so we have to add them
+		allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'h1', 'h2' ])
+	});
 	var md = breakdance(shtml, args).trim();
 	
 	if (args.debug) {
